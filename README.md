@@ -61,7 +61,7 @@ For the sake of simplicity, I have added numbers below each promise representing
 <img width="900" alt="Promise.allSettled - One or more of the passed-in Promise(s) rejects" src="https://user-images.githubusercontent.com/19341550/72213855-0ce65700-351c-11ea-947d-b0be63329f3d.gif">
 
 *Scenario 3*:  All passed-in Promises get rejected
-<img width="900" alt="Promise.allSettled - All passed-in Promises get rejected" src="https://user-images.githubusercontent.com/19341550/72213855-0ce65700-351c-11ea-947d-b0be63329f3d.gif">
+<img width="900" alt="Promise.allSettled - All passed-in Promises get rejected" src="https://user-images.githubusercontent.com/19341550/72213856-0d7eed80-351c-11ea-9961-06d869c9655e.gif">
 
 *Scenario 4*:  Passing an Empty iterable
 <img width="900" alt="Promise.allSettled - Passing an Empty iterable" src="https://user-images.githubusercontent.com/19341550/72213857-0d7eed80-351c-11ea-8766-6425dfa4f3e4.gif">
