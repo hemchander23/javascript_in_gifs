@@ -2,6 +2,7 @@ Hello everybody 👋! I created this GIF cheatsheet for my own reference and I h
 
 ### Index
  * [How is this organized?](#conventions)
+ * [Promise.resolve](#promiseresolve),[Promise.reject](#promisereject)
  * [Promise.all](#promiseall)
  * [Promise.allSettled](#promiseallsettled)
  * [Promise.race](#promiserace)
@@ -18,6 +19,20 @@ Consider the GIFs like watching a slow-mo video of Promise API. The scenarios fo
 | <img width="45" alt="rejected" src="https://user-images.githubusercontent.com/19341550/72203682-cdc0f300-3494-11ea-99eb-40dec7737d60.png">  |  `rejected` | Operation unsuccesful and usually there is a _reason_ for rejection. It appears on top of the rejected promise |
 
 For the sake of simplicity, I have added numbers below each promise representing the order in which they settle. This is handy while understanding the _short-circuiting_ behavior (⚡️) of each promise API. 
+
+# `Promise.resolve` <a name="promiseresolve"></a>
+
+| Scenario | |
+|---|---|
+| If the given value is _not_ a `thenable` but a _valid_ Javascript `value` | <img width="900" alt="Example for promise fulfillment" src="https://user-images.githubusercontent.com/19341550/72240446-2ebe0780-360a-11ea-8e8c-e6b0c9b9f20a.gif"> |
+| If the given value is a `thenable` (i.e., Promise or object with `then()` method | <img width="900" alt="Example for promise fulfillment" src="https://user-images.githubusercontent.com/19341550/72240447-2f569e00-360a-11ea-8a63-25a3920da75d.gif"> |
+| Flattening of _nested_ Promise-like objects | <img width="900" alt="Example for promise fulfillment" src="https://user-images.githubusercontent.com/19341550/72240448-2f569e00-360a-11ea-806c-2b283119374a.gif"> |
+
+# `Promise.reject` <a name="promisereject"></a>
+
+| Scenario | |
+|---|---|
+| When a `reason` is passed | <img width="900" alt="Example for promise fulfillment" src="https://user-images.githubusercontent.com/19341550/72240449-2f569e00-360a-11ea-82e5-ae18cd4155f0.gif"> |
 
 
 # `Promise.all` <a name="promiseall"></a>
