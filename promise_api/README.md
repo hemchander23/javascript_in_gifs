@@ -1,3 +1,4 @@
+# Promise API
 Hello everybody 👋! I created this GIF cheatsheet for my own reference and I hope it will be useful for the community as well ❤️
 
 ### Index
